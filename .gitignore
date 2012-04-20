@@ -4,10 +4,23 @@
 # sbt specific
 dist/*
 target/
+jspeex-player/target/
 lib_managed/
 src_managed/
 project/boot/
-project/plugins/project/
+project/target/
+project/project/target/
+project/project/boot/
 
 # Scala-IDE specific
 .scala_dependencies
+.cache
+.classpath
+.project
+.settings/
+jspeex-player/.classpath
+jspeex-player/.project
+jspeex-player/.settings
+
+# Ignore backup files from my text editor
+*~
