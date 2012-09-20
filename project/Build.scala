@@ -7,9 +7,6 @@ object Build extends Build {
 
 //Codec Dependencies
 val junit = "junit" % "junit" % "4.10" % "test";
-
-//Player Dependencies
-
     
   // Settings
   val commonSettings = Project.defaultSettings ++ Seq(
@@ -18,7 +15,7 @@ val junit = "junit" % "junit" % "4.10" % "test";
   EclipseKeys.skipParents := false,
       organization := "org.xiph.speex",
       version := "0.9.8-SNAPSHOT",
-      scalaVersion := "2.9.1",
+      scalaVersion := "2.10.0-M7",
       resolvers += "Typesafe repository" at "http://repo.typesafe.com/typesafe/releases/",
       libraryDependencies ++= Seq(junit),
       //to inspect the values for javaOptions on the sbt cmdline type "java-options(for run)", simply "java-options" fails to display the "in run" options
